@@ -1,0 +1,98 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "board": "Board",
+    "governance": "Governance",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "title": "MELCO Safety Equipment",
+    "subtitle": "Leading Provider of Safety Equipment in Saudi Arabia",
+    "vision": "Our Vision",
+    "visionText": "To be the first choice and trusted destination in the commercial sector",
+    "mission": "Our Mission",
+    "missionText": "We strive to meet our clients' needs by providing high-quality products and services",
+    "description": "This is a multilingual Next.js app.",
+    "selectLanguage": "Select language"
+  },
+  "About": {
+    "title": "About Us",
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be the first choice and trusted destination in the commercial sector by delivering innovative products and services"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "We strive to meet our clients' needs by providing high-quality products and services driven by innovation and efficiency"
+    }
+  },
+  "Products": {
+    "title": "Our Products",
+    "categories": {
+      "head": "Head Protection",
+      "headDescription": "High-quality helmets and head covers",
+      "eyeFace": "Eye and Face Protection",
+      "eyeFaceDescription": "Safety glasses and face shields",
+      "hearing": "Hearing Protection",
+      "hearingDescription": "Ear plugs and ear muffs",
+      "respiratory": "Respiratory Protection",
+      "respiratoryDescription": "Respirators and filters",
+      "hand": "Hand Protection",
+      "handDescription": "Protective gloves",
+      "body": "Body Protection",
+      "bodyDescription": "Protective clothing",
+      "foot": "Foot Protection",
+      "footDescription": "Safety footwear",
+      "gasDetectors": "Gas Detectors",
+      "gasDetectorsDescription": "Gas detection devices"
+    }
+  },
+  "Board": {
+    "title": "Board of Directors",
+    "placeholder": {
+      "name": "Board Member Name",
+      "position": "Position"
+    }
+  },
+  "Governance": {
+    "title": "Governance",
+    "framework": {
+      "title": "Governance Framework",
+      "description": "Information about company governance framework"
+    },
+    "policies": {
+      "title": "Policies and Procedures",
+      "description": "Information about policies and procedures"
+    }
+  },
+  "News": {
+    "title": "News",
+    "placeholder": {
+      "title": "News Title",
+      "description": "Brief description of the news...",
+      "date": "September 10, 2025"
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+  "Footer": {
+    "rights": "All rights reserved"
+  },
+  "ThemeSwitcher": {
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode",
+    "toggleTheme": "Toggle theme (currently {current})",
+    "switchTo": "Switch to {target} mode"
+  }
+}
