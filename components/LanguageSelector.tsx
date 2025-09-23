@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 
 export default function LanguageSelector() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("LanguageSelector");
   const locale = useLocale();
   const router = useRouter();
 
@@ -18,7 +18,6 @@ export default function LanguageSelector() {
         locale === "ar" ? "flex-row-reverse" : "flex-row"
       }`}
     >
-      <p className="text-gray-900 dark:text-white">{t("description")}</p>
       <select
         value={locale}
         onChange={handleChange}

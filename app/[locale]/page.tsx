@@ -1,12 +1,20 @@
-import LanguageSelector from "../../components/LanguageSelector";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
+import Hero from "@/sections/Hero";
+import Education from "@/sections/education";
+import Experience from "@/sections/experience";
+import Testimonials from "@/sections/testimonials";
+import { useLocale } from "next-intl";
 
 export default function Home() {
+  const locale = useLocale();
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <h1 className="text-red-500">Besm Allah</h1>
-      <LanguageSelector />
-      <ThemeSwitcher />
+    <div className="font-family-base flex flex-col items-center min-h-screen">
+      <Hero locale={locale} />
+      <div className="container mx-auto px-4 py-8 sm:py-12 grid gap-16">
+        <Testimonials />
+        <Experience />
+        <Education />
+      </div>
     </div>
   );
 }

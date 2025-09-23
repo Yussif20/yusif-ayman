@@ -1,98 +1,90 @@
 {
   "Navigation": {
     "home": "Home",
-    "about": "About Us",
-    "products": "Products",
-    "board": "Board",
-    "governance": "Governance",
-    "news": "News",
-    "contact": "Contact"
-  },
-  "HomePage": {
-    "title": "MELCO Safety Equipment",
-    "subtitle": "Leading Provider of Safety Equipment in Saudi Arabia",
-    "vision": "Our Vision",
-    "visionText": "To be the first choice and trusted destination in the commercial sector",
-    "mission": "Our Mission",
-    "missionText": "We strive to meet our clients' needs by providing high-quality products and services",
-    "description": "This is a multilingual Next.js app.",
-    "selectLanguage": "Select language"
-  },
-  "About": {
-    "title": "About Us",
-    "vision": {
-      "title": "Our Vision",
-      "text": "To be the first choice and trusted destination in the commercial sector by delivering innovative products and services"
-    },
-    "mission": {
-      "title": "Our Mission",
-      "text": "We strive to meet our clients' needs by providing high-quality products and services driven by innovation and efficiency"
-    }
-  },
-  "Products": {
-    "title": "Our Products",
-    "categories": {
-      "head": "Head Protection",
-      "headDescription": "High-quality helmets and head covers",
-      "eyeFace": "Eye and Face Protection",
-      "eyeFaceDescription": "Safety glasses and face shields",
-      "hearing": "Hearing Protection",
-      "hearingDescription": "Ear plugs and ear muffs",
-      "respiratory": "Respiratory Protection",
-      "respiratoryDescription": "Respirators and filters",
-      "hand": "Hand Protection",
-      "handDescription": "Protective gloves",
-      "body": "Body Protection",
-      "bodyDescription": "Protective clothing",
-      "foot": "Foot Protection",
-      "footDescription": "Safety footwear",
-      "gasDetectors": "Gas Detectors",
-      "gasDetectorsDescription": "Gas detection devices"
-    }
-  },
-  "Board": {
-    "title": "Board of Directors",
-    "placeholder": {
-      "name": "Board Member Name",
-      "position": "Position"
-    }
-  },
-  "Governance": {
-    "title": "Governance",
-    "framework": {
-      "title": "Governance Framework",
-      "description": "Information about company governance framework"
-    },
-    "policies": {
-      "title": "Policies and Procedures",
-      "description": "Information about policies and procedures"
-    }
-  },
-  "News": {
-    "title": "News",
-    "placeholder": {
-      "title": "News Title",
-      "description": "Brief description of the news...",
-      "date": "September 10, 2025"
-    }
-  },
-  "Contact": {
-    "title": "Contact Us",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "subject": "Subject",
-      "message": "Message",
-      "submit": "Send"
-    }
-  },
-  "Footer": {
-    "rights": "All rights reserved"
+    "projects": "Projects",
+    "blog": "Blog",
+    "services": "Services",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu"
   },
   "ThemeSwitcher": {
     "lightMode": "Switch to light mode",
     "darkMode": "Switch to dark mode",
     "toggleTheme": "Toggle theme (currently {current})",
     "switchTo": "Switch to {target} mode"
+  },
+  "LanguageSelector": {
+    "selectLanguage": "Select language"
+  },
+  "Hero": {
+    "name": "Yousef Ayman",
+    "summary": "Front-end Developer specializing in responsive, accessible web applications using React.js and Next.js",
+    "viewProjects": "View Projects",
+    "downloadCV": "Download CV",
+    "contact": "Contact",
+    "imageAlt": "Image of Yusif Ayman, Front-end Developer"
+  },
+  "Education": {
+    "title": "Education",
+    "almdrasa": {
+      "institution": "Almdrasa",
+      "degree": "Front-End Development Diploma",
+      "duration": "2025",
+      "details": "Core Technologies: HTML, CSS, JavaScript, TypeScript. Frameworks & Libraries: React.js, Next.js, Tailwind CSS, SCSS, shadcn/ui, React Query, Axios. Version Control: Git, GitHub"
+    },
+    "zagazig": {
+      "institution": "Zagazig University",
+      "degree": "Bachelor of Veterinary Medicine",
+      "duration": "2025",
+      "details": "Graduated with a solid foundation in analytical thinking, problem-solving, and research — skills transferable to software development"
+    }
+  },
+  "Experience": {
+    "title": "Experience",
+    "freelance": {
+      "title": "Freelance Front-End Developer",
+      "company": "Self-Employed",
+      "duration": "Mar 2025 - Present",
+      "location": "Remote",
+      "details": [
+        "Delivered custom landing pages, e-commerce websites, and UI for a health-tech AI platform",
+        "Developed scalable front-end solutions using React.js, Next.js, Tailwind CSS, TypeScript, React Query, Axios, Firebase, Stripe, and shadcn/ui",
+        "Integrated multi-language support and secure payment gateways, enhancing accessibility and user trust",
+        "Maintained strong client satisfaction with 100% 5-star reviews and a 70%+ return client rate",
+        "Collaborated with clients on Khamsat and Freelancer.com, driving measurable business growth"
+      ]
+    },
+    "almdrasa": {
+      "title": "Front-End Developer Intern - React.js",
+      "company": "Almdrasa",
+      "duration": "May 2024 - Mar 2025",
+      "location": "Remote",
+      "details": [
+        "Built and deployed 20+ production-ready projects using React.js, Tailwind CSS, and SCSS",
+        "Integrated multi-language support, improving accessibility and user reach",
+        "Enhanced UI responsiveness and performance, reducing load times by 20%",
+        "Integrated Stripe payments, handling secure transactions for over 100 daily users",
+        "Implemented real-time data fetching via APIs, boosting user interactivity"
+      ]
+    }
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What Clients Say About My Work",
+    "description": "Feedback from clients and colleagues about the quality and professionalism of my work",
+    "reviews": [
+      {
+        "opinion": "I hired Yousef to design a new website for our company. He delivered on time with clean code, a responsive layout, and a smooth user experience. He handled feedback quickly and professionally. The result: a fast, sleek site that truly reflects our brand. Highly recommended.",
+        "name": "Faisal A.",
+        "role": "Marketing and Communication Manager at REDA Hazard",
+        "avatar": "/avatar1.jpeg"
+      },
+      {
+        "opinion": "I worked with Yousef to develop a website that showcases our full range of services from: software development and project management to hosting and AI solutions. He quickly understood our vision and translated it into a clean, professional, and responsive website. Throughout the project, he was proactive, communicative, and consistently delivered high-quality work on time. I highly recommend him for any web development project!",
+        "name": "Omar A.",
+        "role": "Tech Project Manager",
+        "avatar": "/avatar2.jpg"
+      }
+    ]
   }
 }

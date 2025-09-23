@@ -1,2 +1,19 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #1f2a44; /* Deep gray-blue */
+  --font-family-base: var(--font-inter, "Inter"), var(--font-tajawal, "Tajawal"),
+    ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Ensure Arabic text uses Tajawal in RTL */
+[dir="rtl"] {
+  font-family: var(--font-tajawal, "Tajawal"), ui-sans-serif, system-ui,
+    sans-serif;
+}
+
+/* Ensure English text uses Inter in LTR */
+[dir="ltr"] {
+  font-family: var(--font-inter, "Inter"), ui-sans-serif, system-ui, sans-serif;
+}

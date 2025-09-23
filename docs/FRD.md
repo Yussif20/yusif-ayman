@@ -30,7 +30,7 @@ A bilingual (EN/AR) personal portfolio showcasing Yusif Ayman, a front-end devel
 
 ### MVP (Phase 1)
 
-- Pages / routes: `/[locale]` (Home/Hero), About (section inside home or dedicated anchor), Projects, Blog (listing + empty state), Services, Contact, (Testimonials & Experience & Education as sections integrated—likely all in home or split into modular sections), 404 page, CV static asset.
+- [x] Pages / routes: `/[locale]` (Home/Hero), About (section inside home or dedicated anchor), Projects, Blog (listing + empty state), Services, Contact, (Testimonials & Experience & Education as sections integrated—likely all in home or split into modular sections), 404 page, CV static asset.
 - Locales: `en`, `ar` (locale prefix stays: `/en/...`, `/ar/...`).
 - Theme: Light/Dark toggle.
 - Sanity CMS integration for structured content.
@@ -45,7 +45,7 @@ A bilingual (EN/AR) personal portfolio showcasing Yusif Ayman, a front-end devel
 - Testimonials section (structure + placeholder items).
 - Blog index (no articles initially but layout ready).
 - Download CV link (`/cv.pdf`).
-- WhatsApp deep link: `https://wa.me/201014921282` (number normalized).
+- WhatsApp deep link: `https://wa.me/201556304388` (number normalized).
 - Contact: Email mailto, WhatsApp link, LinkedIn link.
 
 ### Phase 2 (Nice to Have)
