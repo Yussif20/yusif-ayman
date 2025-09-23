@@ -17,3 +17,42 @@
 [dir="ltr"] {
   font-family: var(--font-inter, "Inter"), ui-sans-serif, system-ui, sans-serif;
 }
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(148 163 184 / 0.6); /* slate-400/60 */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  border: 1px solid rgb(241 245 249 / 0.3); /* slate-50/30 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(100 116 139 / 0.8); /* slate-500/80 */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(71 85 105 / 0.6); /* slate-600/60 */
+  border-color: rgb(30 41 59 / 0.3); /* slate-800/30 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(51 65 85 / 0.8); /* slate-700/80 */
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(148 163 184 / 0.6) transparent; /* slate-400/60 */
+}
+
+.dark * {
+  scrollbar-color: rgb(71 85 105 / 0.6) transparent; /* slate-600/60 */
+}

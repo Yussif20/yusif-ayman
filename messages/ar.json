@@ -86,5 +86,39 @@
         "avatar": "/avatar2.jpg"
       }
     ]
+  },
+  "Skills": {
+    "title": "المهارات والتقنيات",
+    "frontend": {
+      "title": "تطوير الواجهات الأمامية",
+      "skills": [
+        { "name": "React.js", "level": "خبير" },
+        { "name": "Next.js", "level": "متقدم" },
+        { "name": "TypeScript", "level": "متقدم" },
+        { "name": "Tailwind CSS", "level": "خبير" },
+        { "name": "JavaScript (ES6+)", "level": "خبير" },
+        { "name": "HTML5 & CSS3", "level": "خبير" }
+      ]
+    },
+    "apis": {
+      "title": "تكامل APIs والأدوات",
+      "skills": [
+        { "name": "React Query", "level": "متقدم" },
+        { "name": "Axios", "level": "ماهر" },
+        { "name": "REST APIs", "level": "متقدم" },
+        { "name": "GraphQL", "level": "متوسط" },
+        { "name": "إدارة حالة API", "level": "ماهر" }
+      ]
+    },
+    "workflow": {
+      "title": "سير العمل التطويري",
+      "skills": [
+        { "name": "Git & GitHub", "level": "متقدم" },
+        { "name": "التطوير بمساعدة الذكاء الاصطناعي", "level": "ماهر" },
+        { "name": "حل المشكلات", "level": "خبير" },
+        { "name": "تحسين الكود", "level": "متقدم" },
+        { "name": "التصميم المتجاوب", "level": "خبير" }
+      ]
+    }
   }
 }

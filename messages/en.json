@@ -86,5 +86,39 @@
         "avatar": "/avatar2.jpg"
       }
     ]
+  },
+  "Skills": {
+    "title": "Skills & Technologies",
+    "frontend": {
+      "title": "Frontend Development",
+      "skills": [
+        { "name": "React.js", "level": "Expert" },
+        { "name": "Next.js", "level": "Advanced" },
+        { "name": "TypeScript", "level": "Advanced" },
+        { "name": "Tailwind CSS", "level": "Expert" },
+        { "name": "JavaScript (ES6+)", "level": "Expert" },
+        { "name": "HTML5 & CSS3", "level": "Expert" }
+      ]
+    },
+    "apis": {
+      "title": "API Integration & Tools",
+      "skills": [
+        { "name": "React Query", "level": "Advanced" },
+        { "name": "Axios", "level": "Proficient" },
+        { "name": "REST APIs", "level": "Advanced" },
+        { "name": "GraphQL", "level": "Intermediate" },
+        { "name": "API State Management", "level": "Proficient" }
+      ]
+    },
+    "workflow": {
+      "title": "Development Workflow",
+      "skills": [
+        { "name": "Git & GitHub", "level": "Advanced" },
+        { "name": "AI-Assisted Development", "level": "Proficient" },
+        { "name": "Problem Solving", "level": "Expert" },
+        { "name": "Code Optimization", "level": "Advanced" },
+        { "name": "Responsive Design", "level": "Expert" }
+      ]
+    }
   }
 }

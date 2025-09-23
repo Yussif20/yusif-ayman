@@ -42,7 +42,7 @@ export default function Header({ locale }: HeaderProps) {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 rtl:space-x-reverse">
+        <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -59,8 +59,8 @@ export default function Header({ locale }: HeaderProps) {
         </nav>
 
         {/* Desktop Right side - Language Selector and Theme Toggle */}
-        <div className="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
-          <div className="flex items-center space-x-2 rtl:space-x-reverse px-3 py-1 rounded-xl bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 shadow-sm">
+        <div className="hidden md:flex items-center gap-4">
+          <div className="flex items-center gap-2 px-3 py-1 rounded-xl bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 shadow-sm">
             <LanguageSelector />
             <div className="w-px h-4 bg-slate-300 dark:bg-slate-600" />
             <ThemeSwitcher />
