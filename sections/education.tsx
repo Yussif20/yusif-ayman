@@ -25,11 +25,9 @@ export default function Education() {
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 relative overflow-hidden">
+    <section className="py-16 sm:py-20 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-slate-600/3 via-gray-500/3 to-zinc-600/3 pointer-events-none" />
-      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-slate-400/8 to-transparent rounded-full blur-3xl -translate-y-48 -translate-x-48" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-gray-400/8 to-transparent rounded-full blur-3xl translate-y-48 translate-x-48" />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div

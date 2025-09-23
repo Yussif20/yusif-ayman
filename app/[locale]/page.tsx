@@ -8,9 +8,9 @@ export default function Home() {
   const locale = useLocale();
 
   return (
-    <div className="font-family-base flex flex-col items-center min-h-screen">
-      <Hero locale={locale} />
-      <div className="container mx-auto px-4 py-8 sm:py-12 grid gap-16">
+    <div className="font-family-base flex flex-col items-center">
+      <div className="mx-auto px-4 py-8 sm:py-12 grid w-full">
+        <Hero locale={locale} />
         <Testimonials />
         <Experience />
         <Education />

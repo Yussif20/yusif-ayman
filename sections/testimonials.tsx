@@ -19,10 +19,10 @@ export default function Testimonials() {
   }, [testimonials.length]);
 
   return (
-    <section className="py-14 bg-ivory-100 dark:bg-charcoal-900 overflow-x-hidden">
-      <div className="text-center flex flex-col gap-4 max-w-2xl mx-auto px-4">
+    <section className="py-14 relative overflow-hidden">
+      <div className="text-center flex flex-col gap-4 max-w-2xl mx-auto px-4 relative z-10">
         <motion.p
-          className="text-gray-600 dark:text-gray-300 font-bold uppercase tracking-wider text-sm"
+          className="text-slate-600 dark:text-slate-300 font-bold uppercase tracking-wider text-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -31,7 +31,7 @@ export default function Testimonials() {
         </motion.p>
 
         <motion.p
-          className="text-gray-600 dark:text-gray-300 text-base md:text-lg tracking-tight"
+          className="text-slate-600 dark:text-slate-300 text-base md:text-lg tracking-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
@@ -40,7 +40,7 @@ export default function Testimonials() {
         </motion.p>
       </div>
 
-      <div className="mt-12 max-w-3xl mx-auto px-4">
+      <div className="mt-12 max-w-3xl mx-auto px-4 relative z-10">
         <div className="relative min-h-[200px] sm:min-h-[250px]">
           {testimonials.map(
             (
@@ -70,9 +70,9 @@ export default function Testimonials() {
                 }}
                 transition={{ duration: 0.7, ease: "easeInOut" }}
               >
-                <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600 p-4 sm:p-6 max-w-md mx-auto w-full shadow-sm">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-200/50 dark:border-slate-700/50 p-4 sm:p-6 max-w-md mx-auto w-full shadow-xl shadow-slate-900/10 hover:shadow-2xl hover:shadow-slate-500/10 transition-all duration-300">
                   <blockquote>
-                    <p className="text-gray-600 dark:text-gray-300 italic text-sm sm:text-base leading-6">
+                    <p className="text-slate-600 dark:text-slate-300 italic text-sm sm:text-base leading-6">
                       &quot;{testimonial.opinion}&quot;
                     </p>
                   </blockquote>
@@ -86,10 +86,10 @@ export default function Testimonials() {
                       priority={index === 0}
                     />
                     <div>
-                      <span className="text-gray-900 dark:text-white font-medium text-sm sm:text-base">
+                      <span className="text-slate-900 dark:text-white font-medium text-sm sm:text-base">
                         {testimonial.name}
                       </span>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                      <p className="text-slate-600 dark:text-slate-300 text-sm">
                         {testimonial.role}
                       </p>
                     </div>
