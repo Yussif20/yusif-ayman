@@ -5,7 +5,13 @@
     "blog": "Blog",
     "services": "Services",
     "contact": "Contact",
-    "toggleMenu": "Toggle menu"
+    "toggleMenu": "Toggle menu",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "homeLabel": "Go to homepage",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenu": "Mobile navigation menu"
   },
   "ThemeSwitcher": {
     "lightMode": "Switch to light mode",
@@ -22,7 +28,10 @@
     "viewProjects": "View Projects",
     "downloadCV": "Download CV",
     "contact": "Contact",
-    "imageAlt": "Image of Yusif Ayman, Front-end Developer"
+    "imageAlt": "Image of Yusif Ayman, Front-end Developer",
+    "profileImageAlt": "Yousef Ayman - Professional profile photo",
+    "ctaButtons": "Call to action buttons",
+    "downloadCVAria": "Download CV as PDF"
   },
   "Education": {
     "title": "Education",
@@ -92,32 +101,80 @@
     "frontend": {
       "title": "Frontend Development",
       "skills": [
-        { "name": "React.js", "level": "Expert" },
-        { "name": "Next.js", "level": "Advanced" },
-        { "name": "TypeScript", "level": "Advanced" },
-        { "name": "Tailwind CSS", "level": "Expert" },
-        { "name": "JavaScript (ES6+)", "level": "Expert" },
-        { "name": "HTML5 & CSS3", "level": "Expert" }
+        {
+          "name": "React.js",
+          "level": "Expert"
+        },
+        {
+          "name": "Next.js",
+          "level": "Advanced"
+        },
+        {
+          "name": "TypeScript",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": "Expert"
+        },
+        {
+          "name": "JavaScript (ES6+)",
+          "level": "Expert"
+        },
+        {
+          "name": "HTML5 & CSS3",
+          "level": "Expert"
+        }
       ]
     },
     "apis": {
       "title": "API Integration & Tools",
       "skills": [
-        { "name": "React Query", "level": "Advanced" },
-        { "name": "Axios", "level": "Proficient" },
-        { "name": "REST APIs", "level": "Advanced" },
-        { "name": "GraphQL", "level": "Intermediate" },
-        { "name": "API State Management", "level": "Proficient" }
+        {
+          "name": "React Query",
+          "level": "Advanced"
+        },
+        {
+          "name": "Axios",
+          "level": "Proficient"
+        },
+        {
+          "name": "REST APIs",
+          "level": "Advanced"
+        },
+        {
+          "name": "GraphQL",
+          "level": "Intermediate"
+        },
+        {
+          "name": "API State Management",
+          "level": "Proficient"
+        }
       ]
     },
     "workflow": {
       "title": "Development Workflow",
       "skills": [
-        { "name": "Git & GitHub", "level": "Advanced" },
-        { "name": "AI-Assisted Development", "level": "Proficient" },
-        { "name": "Problem Solving", "level": "Expert" },
-        { "name": "Code Optimization", "level": "Advanced" },
-        { "name": "Responsive Design", "level": "Expert" }
+        {
+          "name": "Git & GitHub",
+          "level": "Advanced"
+        },
+        {
+          "name": "AI-Assisted Development",
+          "level": "Proficient"
+        },
+        {
+          "name": "Problem Solving",
+          "level": "Expert"
+        },
+        {
+          "name": "Code Optimization",
+          "level": "Advanced"
+        },
+        {
+          "name": "Responsive Design",
+          "level": "Expert"
+        }
       ]
     }
   }

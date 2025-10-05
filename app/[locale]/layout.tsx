@@ -29,42 +29,24 @@ export default async function RootLayout({
   const { locale } = await params;
   const messages = await getMessages();
   const direction = locale === "ar" ? "rtl" : "ltr";
+  const fontClass = locale === "ar" ? tajawal.variable : inter.variable;
 
   return (
-    <html lang={locale} dir={direction} className="light">
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  var theme = localStorage.getItem('theme');
-                  if (!theme) {
-                    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                  }
-                  if (theme === 'dark') {
-                    document.documentElement.classList.add('dark');
-                  } else {
-                    document.documentElement.classList.remove('dark');
-                  }
-                } catch (e) {}
-              })();
-            `,
-          }}
-        />
-      </head>
-      <body
-        className={`min-h-screen ${inter.variable} ${tajawal.variable} bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 font-family-base relative overflow-x-hidden`}
-      >
-        {/* Background decorations */}
-        <div className="fixed inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-slate-400/5 to-transparent rounded-full blur-3xl -translate-y-48 -translate-x-48" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-slate-400/5 to-transparent rounded-full blur-3xl translate-y-48 translate-x-48" />
-        </div>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="flex flex-col min-h-screen relative z-10">
+    <html lang={locale} dir={direction} className={fontClass}>
+      <body className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+        <NextIntlClientProvider messages={messages}>
+          <div className="relative min-h-screen">
+            {/* Background decorations */}
+            <div
+              className="fixed inset-0 -z-10 overflow-hidden pointer-events-none"
+              aria-hidden="true"
+            >
+              <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-300/20 dark:bg-purple-500/10 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-300/20 dark:bg-pink-500/10 rounded-full blur-3xl"></div>
+            </div>
+
             <Header locale={locale} />
-            <main className="flex-grow">{children}</main>
+            {children}
           </div>
         </NextIntlClientProvider>
       </body>

@@ -5,7 +5,13 @@
     "blog": "المدونة",
     "services": "الخدمات",
     "contact": "التواصل",
-    "toggleMenu": "تبديل القائمة"
+    "toggleMenu": "تبديل القائمة",
+    "mainNavigation": "التنقل الرئيسي",
+    "mobileNavigation": "التنقل على الهاتف المحمول",
+    "homeLabel": "الذهاب إلى الصفحة الرئيسية",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "mobileMenu": "قائمة التنقل على الهاتف المحمول"
   },
   "ThemeSwitcher": {
     "lightMode": "التبديل إلى الوضع الفاتح",
@@ -22,7 +28,10 @@
     "viewProjects": "عرض المشاريع",
     "downloadCV": "تحميل السيرة الذاتية",
     "contact": "التواصل",
-    "imageAlt": "صورة يوسف أيمن، مطور واجهات أمامية"
+    "imageAlt": "صورة يوسف أيمن، مطور واجهات أمامية",
+    "profileImageAlt": "يوسف أيمن - صورة ملف شخصي احترافية",
+    "ctaButtons": "أزرار الدعوة إلى اتخاذ إجراء",
+    "downloadCVAria": "تنزيل السيرة الذاتية بصيغة PDF"
   },
   "Education": {
     "title": "التعليم",
@@ -92,32 +101,80 @@
     "frontend": {
       "title": "تطوير الواجهات الأمامية",
       "skills": [
-        { "name": "React.js", "level": "خبير" },
-        { "name": "Next.js", "level": "متقدم" },
-        { "name": "TypeScript", "level": "متقدم" },
-        { "name": "Tailwind CSS", "level": "خبير" },
-        { "name": "JavaScript (ES6+)", "level": "خبير" },
-        { "name": "HTML5 & CSS3", "level": "خبير" }
+        {
+          "name": "React.js",
+          "level": "خبير"
+        },
+        {
+          "name": "Next.js",
+          "level": "متقدم"
+        },
+        {
+          "name": "TypeScript",
+          "level": "متقدم"
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": "خبير"
+        },
+        {
+          "name": "JavaScript (ES6+)",
+          "level": "خبير"
+        },
+        {
+          "name": "HTML5 & CSS3",
+          "level": "خبير"
+        }
       ]
     },
     "apis": {
       "title": "تكامل APIs والأدوات",
       "skills": [
-        { "name": "React Query", "level": "متقدم" },
-        { "name": "Axios", "level": "ماهر" },
-        { "name": "REST APIs", "level": "متقدم" },
-        { "name": "GraphQL", "level": "متوسط" },
-        { "name": "إدارة حالة API", "level": "ماهر" }
+        {
+          "name": "React Query",
+          "level": "متقدم"
+        },
+        {
+          "name": "Axios",
+          "level": "ماهر"
+        },
+        {
+          "name": "REST APIs",
+          "level": "متقدم"
+        },
+        {
+          "name": "GraphQL",
+          "level": "متوسط"
+        },
+        {
+          "name": "إدارة حالة API",
+          "level": "ماهر"
+        }
       ]
     },
     "workflow": {
       "title": "سير العمل التطويري",
       "skills": [
-        { "name": "Git & GitHub", "level": "متقدم" },
-        { "name": "التطوير بمساعدة الذكاء الاصطناعي", "level": "ماهر" },
-        { "name": "حل المشكلات", "level": "خبير" },
-        { "name": "تحسين الكود", "level": "متقدم" },
-        { "name": "التصميم المتجاوب", "level": "خبير" }
+        {
+          "name": "Git & GitHub",
+          "level": "متقدم"
+        },
+        {
+          "name": "التطوير بمساعدة الذكاء الاصطناعي",
+          "level": "ماهر"
+        },
+        {
+          "name": "حل المشكلات",
+          "level": "خبير"
+        },
+        {
+          "name": "تحسين الكود",
+          "level": "متقدم"
+        },
+        {
+          "name": "التصميم المتجاوب",
+          "level": "خبير"
+        }
       ]
     }
   }

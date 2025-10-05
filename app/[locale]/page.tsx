@@ -9,14 +9,20 @@ export default function Home() {
   const locale = useLocale();
 
   return (
-    <div className="font-family-base flex flex-col items-center">
-      <div className="mx-auto px-4 py-8 sm:py-12 grid gap-8 w-full">
-        <Hero locale={locale} />
-        <Skills />
-        <Testimonials />
-        <Experience />
-        <Education />
-      </div>
-    </div>
+    <main id="main-content" className="focus:outline-none" tabIndex={-1}>
+      {/* Skip to main content link for keyboard navigation */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-md focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
+
+      <Hero locale={locale} />
+      <Skills />
+      <Experience />
+      <Education />
+      <Testimonials />
+    </main>
   );
 }
