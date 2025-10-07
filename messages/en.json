@@ -11,7 +11,9 @@
     "homeLabel": "Go to homepage",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "mobileMenu": "Mobile navigation menu"
+    "mobileMenu": "Mobile navigation menu",
+    "theme": "Theme",
+    "language": "Language"
   },
   "ThemeSwitcher": {
     "lightMode": "Switch to light mode",

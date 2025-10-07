@@ -22,7 +22,6 @@ export default function Header({ locale }: HeaderProps) {
     { href: `/${locale}`, labelKey: "home" },
     { href: `/${locale}/projects`, labelKey: "projects" },
     { href: `/${locale}/blog`, labelKey: "blog" },
-    { href: `/${locale}/services`, labelKey: "services" },
     { href: `/${locale}/contact`, labelKey: "contact" },
   ];
 
@@ -87,7 +86,7 @@ export default function Header({ locale }: HeaderProps) {
 
   return (
     <header
-      className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 shadow-sm"
+      className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-gray-800 shadow-md"
       role="banner"
     >
       <nav
@@ -132,7 +131,7 @@ export default function Header({ locale }: HeaderProps) {
         <button
           ref={menuButtonRef}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2 transition-colors"
+          className="md:hidden p-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2 transition-colors border border-gray-200 dark:border-slate-700"
           aria-label={
             isMobileMenuOpen
               ? t("closeMenu") || "Close menu"
@@ -172,7 +171,7 @@ export default function Header({ locale }: HeaderProps) {
         <>
           {/* Overlay */}
           <div
-            className="fixed inset-0 bg-black/50 md:hidden z-40"
+            className="fixed inset-0 bg-black/60 md:hidden z-40"
             onClick={() => setIsMobileMenuOpen(false)}
             aria-hidden="true"
           />
@@ -181,46 +180,54 @@ export default function Header({ locale }: HeaderProps) {
           <div
             ref={mobileMenuRef}
             id="mobile-menu"
-            className="fixed top-0 right-0 rtl:right-auto rtl:left-0 h-full w-64 bg-white dark:bg-slate-900 shadow-2xl md:hidden z-50 transform transition-transform duration-300 ease-in-out"
+            className="fixed top-0 right-0 rtl:right-auto rtl:left-0 h-full w-80 bg-white dark:bg-slate-900 shadow-2xl md:hidden z-50 transform transition-transform duration-300 ease-in-out border-l border-gray-200 dark:border-slate-700"
             role="dialog"
             aria-modal="true"
             aria-label={t("mobileMenu") || "Mobile navigation menu"}
           >
-            <div className="p-4 flex flex-col h-full">
-              {/* Close button */}
-              <button
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="self-end p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-900 mb-4"
-                aria-label={t("closeMenu") || "Close menu"}
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
+            <div className="p-6 flex flex-col h-full">
+              {/* Header with close button */}
+              <div className="flex items-center justify-between mb-8">
+                <h2 className="text-xl font-bold bg-gradient-to-r from-blue-900 via-slate-700 to-slate-600 dark:from-blue-400 dark:via-slate-400 dark:to-slate-300 bg-clip-text text-transparent">
+                  Menu
+                </h2>
+                <button
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2 transition-colors"
+                  aria-label={t("closeMenu") || "Close menu"}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
 
               {/* Mobile Navigation Links */}
-              <nav aria-label={t("mobileNavigation") || "Mobile navigation"}>
+              <nav
+                aria-label={t("mobileNavigation") || "Mobile navigation"}
+                className="flex-1"
+              >
                 <ul className="flex flex-col space-y-2">
                   {navItems.map((item) => (
                     <li key={item.href}>
                       <Link
                         href={item.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`block px-4 py-3 rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-900 ${
+                        className={`block px-6 py-4 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2 text-lg font-medium ${
                           isActive(item.href)
-                            ? "bg-gradient-to-r from-blue-900 to-slate-700 text-white shadow-md"
-                            : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800"
+                            ? "bg-gradient-to-r from-blue-900 to-slate-700 text-white shadow-lg"
+                            : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 hover:shadow-md"
                         }`}
                         aria-current={isActive(item.href) ? "page" : undefined}
                       >
@@ -232,9 +239,19 @@ export default function Header({ locale }: HeaderProps) {
               </nav>
 
               {/* Theme Switcher and Language Selector for Mobile */}
-              <div className="mt-auto pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-col gap-3">
-                <ThemeSwitcher />
-                <LanguageSelector />
+              <div className="mt-8 pt-6 border-t border-gray-200 dark:border-slate-700 space-y-4">
+                <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-slate-800 rounded-xl">
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    {t("theme")}
+                  </span>
+                  <ThemeSwitcher />
+                </div>
+                <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-slate-800 rounded-xl">
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    {t("language")}
+                  </span>
+                  <LanguageSelector />
+                </div>
               </div>
             </div>
           </div>
