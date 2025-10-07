@@ -93,13 +93,13 @@
         "opinion": "I hired Yousef to design a new website for our company. He delivered on time with clean code, a responsive layout, and a smooth user experience. He handled feedback quickly and professionally. The result: a fast, sleek site that truly reflects our brand. Highly recommended.",
         "name": "Faisal A.",
         "role": "Marketing and Communication Manager at REDA Hazard",
-        "avatar": "/avatar1.jpeg"
+        "avatar": "/testimonials/avatar1.jpeg"
       },
       {
         "opinion": "I worked with Yousef to develop a website that showcases our full range of services from: software development and project management to hosting and AI solutions. He quickly understood our vision and translated it into a clean, professional, and responsive website. Throughout the project, he was proactive, communicative, and consistently delivered high-quality work on time. I highly recommend him for any web development project!",
         "name": "Omar A.",
         "role": "Tech Project Manager",
-        "avatar": "/avatar2.jpg"
+        "avatar": "/testimonials/avatar2.jpg"
       }
     ]
   },
