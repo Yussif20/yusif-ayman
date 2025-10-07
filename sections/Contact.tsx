@@ -461,7 +461,7 @@ export default function Contact() {
           <div className="bg-blue-50 dark:bg-slate-800/50 rounded-xl p-6 border border-blue-200 dark:border-slate-600">
             <div className="flex items-center mb-4">
               <Clock
-                className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2"
+                className="w-5 h-5 text-blue-600 dark:text-blue-400 mx-2"
                 aria-hidden="true"
               />
               <h3 className="font-medium text-gray-900 dark:text-white">

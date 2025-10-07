@@ -15,6 +15,11 @@
     "theme": "Theme",
     "language": "Language"
   },
+  "Loading": {
+    "title": "Loading...",
+    "subtitle": "Please wait while we prepare your experience",
+    "loadingAria": "Page is loading, please wait"
+  },
   "ThemeSwitcher": {
     "lightMode": "Switch to light mode",
     "darkMode": "Switch to dark mode",
