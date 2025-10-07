@@ -1,4 +1,6 @@
+import Contact from "@/sections/Contact";
+
 // Contact Page
-export default function Contact() {
-  return <div>Contact Page</div>;
+export default function ContactPage() {
+  return <Contact />;
 }

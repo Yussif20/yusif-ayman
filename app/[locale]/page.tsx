@@ -3,7 +3,9 @@ import Skills from "@/sections/Skills";
 import Testimonials from "@/sections/testimonials";
 import Experience from "@/sections/experience";
 import Education from "@/sections/education";
+import Contact from "@/sections/Contact";
 import { useLocale } from "next-intl";
+import Projects from "@/sections/Projects";
 
 export default function Home() {
   const locale = useLocale();
@@ -19,10 +21,12 @@ export default function Home() {
       </a>
 
       <Hero locale={locale} />
+      <Testimonials />
+      <Projects locale={locale} />
       <Skills />
       <Experience />
       <Education />
-      <Testimonials />
+      <Contact />
     </main>
   );
 }

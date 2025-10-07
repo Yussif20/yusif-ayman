@@ -177,5 +177,71 @@
         }
       ]
     }
+  },
+  "Contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's Build Something Amazing Together",
+    "description": "I'm always excited to discuss new projects and opportunities. Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project or question...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required",
+      "success": "Thank you! Your message has been sent successfully.",
+      "error": "Sorry, there was an error sending your message. Please try again.",
+      "formLabel": "Contact form",
+      "submitLabel": "Submit contact form"
+    },
+    "info": {
+      "email": "yousef.ayman.dev@gmail.com",
+      "phone": "+20 155 630 4388",
+      "location": "Tanta, Egypt (Remote | Open to relocation for the right opportunity)",
+      "availability": "Available for freelance work",
+      "responseTime": "Usually responds within 24 hours",
+      "emailLabel": "Send email to Yousef",
+      "phoneLabel": "Call Yousef",
+      "locationLabel": "Yousef's location"
+    },
+    "social": {
+      "title": "Connect With Me",
+      "github": "GitHub Profile",
+      "linkedin": "LinkedIn Profile",
+      "twitter": "Twitter Profile",
+      "portfolio": "Portfolio Website",
+      "followOnGithub": "Follow on GitHub",
+      "connectOnLinkedin": "Connect on LinkedIn",
+      "followOnTwitter": "Follow on Twitter"
+    }
+  },
+  "Projects": {
+    "title": "Featured Projects",
+    "description": "Explore my latest web development projects showcasing modern technologies and best practices",
+    "viewLive": "Live Demo",
+    "viewCode": "GitHub",
+    "viewAllProjects": "View All Projects",
+    "projectScreenshot": "project screenshot",
+    "technologiesUsed": "Technologies used",
+    "filterByTech": "Filter by Technology",
+    "allProjects": "All Projects",
+    "showingProjects": "Showing {count} projects",
+    "descriptions": {
+      "talentbridge": "Developed a comprehensive web application for identifying twice-exceptional students (gifted with learning challenges). Built with Next.js 15, TypeScript, and Tailwind CSS, featuring bilingual support (English/Arabic) with full RTL layout. Implemented evidence-based assessment forms for teachers and parents, instant scoring system, and PDF report generation. Key features include dark/light theme switching, responsive design across all devices, and professional UI with smooth animations. Achieved 90+ Lighthouse performance score with optimized code splitting and image delivery.",
+      "flyKitchen": "Developed a modern, fully responsive Next.js web app for Fly Kitchen, a cloud kitchen platform. Implemented advanced UI/UX with animated hero, interactive product journeys, and dynamic feature showcases. Integrated multi-language support (Arabic/English), RTL layouts, and custom sliders for brands and channels. Focused on performance, accessibility, and seamless user experience across all devices.",
+      "marketio": "Marketio is a responsive e-commerce app built with React.js and Tailwind CSS, featuring product search, categories, wishlist, color variants, and dynamic ratings. It includes Firebase authentication (email/Google), Stripe payments with a success page, and multi-language support (English, Arabic, Spanish) via i18n. Enhanced with light/dark modes, Swiper sliders, and React Router DOM, it's optimized for all devices. Deployed on Vercel, it showcases my skills in creating feature-rich, user-friendly stores.",
+      "melco": "Melco is a responsive, bilingual website for a leading safety equipment provider. Built with Next.js, Tailwind CSS, and next-intl, it supports English/Arabic with RTL compatibility. Features include a full-screen cover image, SEO optimization, dark mode, and sections for Vision, Mission, and Values (Quality, Innovation, Professionalism, Partnership, Sustainability). Scalable for future enhancements like e-commerce.",
+      "goldenMetal": "Golden Metal is a responsive, SEO-friendly website built for a Saudi Arabian mining company to showcase their services and expertise. The site features a modern, multi-language interface (English/Arabic) with RTL support, ensuring accessibility for diverse audiences. It includes service pages with smooth animations, a contact form powered by EmailJS, and an optimized structure for fast load times. Deployed on Hostinger, the project highlights my skills in creating professional, client-focused web solutions with a focus on performance and user engagement.",
+      "marsEsim": "Mars - eSIM is a React-based web app for seamless eSIM connectivity, enabling travelers and remote workers to browse and activate local, regional, and global data plans. It features a multi-language UI (English/Arabic) with RTL support, a searchable country list, detailed plan info, and an interactive FAQ. With smooth animations and a responsive grid layout, it's optimized for all devices. Deployed on Vercel, it showcases scalable, user-friendly front-end solutions."
+    }
   }
 }
