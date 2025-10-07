@@ -423,7 +423,15 @@ export default function Contact() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">
                       {info.label}
                     </p>
-                    <p className="font-medium text-gray-900 dark:text-white">
+                    <p
+                      className={`font-medium text-gray-900 dark:text-white ${
+                        info.icon === Phone ? "ltr" : ""
+                      }`}
+                      dir={info.icon === Phone ? "ltr" : undefined}
+                      style={
+                        info.icon === Phone ? { textAlign: "left" } : undefined
+                      }
+                    >
                       {info.value}
                     </p>
                   </div>

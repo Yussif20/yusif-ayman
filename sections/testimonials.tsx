@@ -19,7 +19,7 @@ export default function Testimonials() {
   }, [testimonials.length]);
 
   return (
-    <section className="py-14 relative overflow-hidden">
+    <section className="py-14 relative overflow-hidden" id="testimonials">
       <div className="text-center flex flex-col gap-4 max-w-2xl mx-auto px-4 relative z-10">
         <motion.p
           className="text-slate-600 dark:text-slate-300 font-bold uppercase tracking-wider text-sm"
