@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,7 +8,9 @@ import Image from "next/image";
 export default function Testimonials() {
   const t = useTranslations("Testimonials");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [containerHeight, setContainerHeight] = useState("auto");
   const testimonials = t.raw("reviews");
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -17,6 +19,26 @@ export default function Testimonials() {
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
+
+  // Update container height when current testimonial changes
+  useEffect(() => {
+    if (cardRefs.current[currentIndex]) {
+      const currentCardHeight = cardRefs.current[currentIndex]?.offsetHeight;
+      if (currentCardHeight) {
+        setContainerHeight(`${currentCardHeight}px`);
+      }
+    }
+  }, [currentIndex]);
+
+  // Set initial height
+  useEffect(() => {
+    if (cardRefs.current[0]) {
+      const initialHeight = cardRefs.current[0]?.offsetHeight;
+      if (initialHeight) {
+        setContainerHeight(`${initialHeight}px`);
+      }
+    }
+  }, []);
 
   return (
     <section className="py-14 relative overflow-hidden" id="testimonials">
@@ -34,14 +56,17 @@ export default function Testimonials() {
           className="text-slate-600 dark:text-slate-300 text-base md:text-lg tracking-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
         >
           {t("description")}
         </motion.p>
       </div>
 
       <div className="mt-12 max-w-3xl mx-auto px-4 relative z-10">
-        <div className="relative min-h-[200px] sm:min-h-[250px]">
+        <div
+          className="relative transition-all duration-700 ease-in-out"
+          style={{ height: containerHeight, minHeight: "200px" }}
+        >
           {testimonials.map(
             (
               testimonial: {
@@ -54,7 +79,10 @@ export default function Testimonials() {
             ) => (
               <motion.div
                 key={index}
-                className="absolute w-full"
+                ref={(el) => {
+                  cardRefs.current[index] = el;
+                }}
+                className="absolute w-full top-0 left-0"
                 initial={{
                   opacity: 0,
                   x: index < currentIndex ? "-100%" : "100%",
@@ -72,7 +100,7 @@ export default function Testimonials() {
               >
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-200/50 dark:border-slate-700/50 p-4 sm:p-6 max-w-md mx-auto w-full shadow-xl shadow-slate-900/10 hover:shadow-2xl hover:shadow-slate-500/10 transition-all duration-300">
                   <blockquote>
-                    <p className="text-slate-600 dark:text-slate-300 italic text-sm sm:text-base leading-6">
+                    <p className="text-slate-600 dark:text-slate-300 italic text-sm sm:text-base leading-relaxed break-words">
                       &quot;{testimonial.opinion}&quot;
                     </p>
                   </blockquote>

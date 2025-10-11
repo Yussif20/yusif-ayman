@@ -47,7 +47,7 @@ export default function Hero({ locale }: { locale: string }) {
             {t("viewProjects")}
           </Link>
           <a
-            href="/cv.pdf"
+            href="/Yousef_Ayman.pdf"
             download
             className="px-6 py-3 bg-gray-200 dark:bg-slate-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-slate-600 shadow-lg hover:shadow-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 font-medium"
             aria-label={t("downloadCVAria") || "Download CV as PDF"}

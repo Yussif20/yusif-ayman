@@ -84,7 +84,7 @@
       ]
     }
   },
-  "Testimonials":{
+  "Testimonials": {
     "title": "Client Testimonials",
     "subtitle": "What clients say about my work",
     "description": "Feedback from clients and colleagues about the quality and professionalism of my work",
@@ -98,42 +98,41 @@
       {
         "opinion": "I collaborated with Youssef to develop a website showcasing our full range of services from software development and project management to hosting and AI solutions. He quickly understood our vision and turned it into a clean, professional, and responsive website. Throughout the project, he was proactive, communicative, and delivered high-quality work on time. Highly recommend him for any web development project!",
         "name": "Omar A.",
-        "role": "Technical Project Manager",
+        "role": "Technical Project Manager at We Pioners",
         "avatar": "/testimonials/avatar2.jpg"
       },
       {
         "opinion": "May God bless him, Youssef is a very hardworking person. May God benefit us through him and benefit him through us.",
         "name": "Ahmad Fathy",
         "role": "Founder @ Almdrasa.com | Senior Engineering Manager @ Yassir",
-        "avatar": "/testimonials/avatar3.jpg"
+        "avatar": "/testimonials/avatar3.jpeg"
       },
       {
         "opinion": "Excellent and very professional work. Classy dealing and patient with revisions. Delivery time was excellent and unexpected. Thank you very much, looking forward to working together again, God willing.",
         "name": "Mohamed Reda",
         "role": "Product Manager at Fly Kitchen Company",
-        "avatar": "/testimonials/avatar4.jpg"
+        "avatar": "/testimonials/avatar4.webp"
       },
       {
         "opinion": "God bless him, fast work and truly artistic, understands the job without much discussion.",
         "name": "Omar Hodrob",
-        "role": "Senior Software Engineer",
-        "avatar": "/testimonials/avatar5.jpg"
+        "role": "Lead Engineer at Erihla LTD",
+        "avatar": "/testimonials/avatar5.jpeg"
       },
       {
         "opinion": "Finished the work quickly and had ideas that benefited me. I gave him design freedom too and it turned out much better than what I had in mind.",
         "name": "Iman Al-Jughiman",
         "role": "AI & Machine Learning Researcher",
-        "avatar": "/testimonials/avatar6.jpg"
+        "avatar": "/testimonials/avatar6.png"
       },
       {
         "opinion": "One of the best programmers to work with in terms of both work and character. Speed and accuracy in execution and completing the required work with high efficiency.",
         "name": "Mahmoud Shalaby",
         "role": "Marketing Manager at Golden Metal Company",
-        "avatar": "/testimonials/avatar7.jpg"
+        "avatar": "/testimonials/avatar7.png"
       }
     ]
-  }
-,
+  },
   "Skills": {
     "title": "Skills & Technologies",
     "frontend": {
