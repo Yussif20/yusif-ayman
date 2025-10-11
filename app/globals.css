@@ -58,7 +58,13 @@
   outline: 2px solid #1e3a8a;
   outline-offset: 2px;
 }
-
+a,
+button,
+select,
+input,
+textarea {
+  cursor: pointer;
+}
 /* Custom Scrollbar Styles with dark blue to gray gradient */
 ::-webkit-scrollbar {
   width: 8px;
