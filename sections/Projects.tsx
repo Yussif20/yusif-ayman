@@ -49,12 +49,12 @@ export default function Projects({ locale }: ProjectsProps) {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             {/* Project Image */}
-            <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-blue-900 to-slate-700">
+            <div className="relative h-48 md:h-48 aspect-video md:aspect-auto w-full overflow-hidden bg-gradient-to-br from-blue-900 to-slate-700">
               <Image
                 src={project.image}
                 alt={`${project.title} ${t("projectScreenshot")}`}
                 fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                className="object-contain md:object-cover group-hover:scale-105 md:group-hover:scale-110 transition-transform duration-300"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
