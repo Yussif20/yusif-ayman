@@ -1,11 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { projectsData } from "@/data/ProjectsData";
+import { projectsData, type Project } from "@/data/ProjectsData";
+import ProjectModal from "@/components/ProjectModal";
 
 interface ProjectsProps {
   locale: string;
@@ -13,9 +15,21 @@ interface ProjectsProps {
 
 export default function Projects({ locale }: ProjectsProps) {
   const t = useTranslations("Projects");
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Get featured projects (first 3)
   const featuredProjects = projectsData.filter((p) => p.featured).slice(0, 3);
+
+  const openProjectModal = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeProjectModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <section
@@ -42,11 +56,21 @@ export default function Projects({ locale }: ProjectsProps) {
         {featuredProjects.map((project, index) => (
           <motion.article
             key={project.id}
-            className="group bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-slate-700 hover:border-blue-900 dark:hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            className="group bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-slate-700 hover:border-blue-900 dark:hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
+            onClick={() => openProjectModal(project)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                openProjectModal(project);
+              }
+            }}
+            aria-label={`View details for ${project.title}`}
           >
             {/* Project Image */}
             <div className="relative h-48 md:h-48 aspect-video md:aspect-auto w-full overflow-hidden bg-gradient-to-br from-blue-900 to-slate-700">
@@ -57,6 +81,14 @@ export default function Projects({ locale }: ProjectsProps) {
                 className="object-contain md:object-cover group-hover:scale-105 md:group-hover:scale-110 transition-transform duration-300"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
+              {/* Click overlay hint */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                <div className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-95 group-hover:scale-100">
+                  <span className="text-sm font-medium text-gray-900 dark:text-white">
+                    {t("clickToViewDetails") || "Click to view details"}
+                  </span>
+                </div>
+              </div>
             </div>
 
             {/* Project Content */}
@@ -94,6 +126,7 @@ export default function Projects({ locale }: ProjectsProps) {
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-900 to-slate-700 text-white rounded-lg hover:from-blue-950 hover:to-slate-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                   aria-label={`${t("viewLive")} ${project.title}`}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <ExternalLink className="w-4 h-4" aria-hidden="true" />
                   {t("viewLive")}
@@ -105,6 +138,7 @@ export default function Projects({ locale }: ProjectsProps) {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-blue-900 text-blue-900 dark:border-slate-400 dark:text-slate-300 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                   aria-label={`${t("viewCode")} ${project.title}`}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Github className="w-4 h-4" aria-hidden="true" />
                   {t("viewCode")}
@@ -125,6 +159,13 @@ export default function Projects({ locale }: ProjectsProps) {
           <ExternalLink className="w-5 h-5" aria-hidden="true" />
         </Link>
       </div>
+
+      {/* Project Modal */}
+      <ProjectModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={closeProjectModal}
+      />
     </section>
   );
 }
