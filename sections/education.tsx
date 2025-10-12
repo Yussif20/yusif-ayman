@@ -44,7 +44,7 @@ export default function Education() {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-4 sm:left-1/2 top-0 w-0.5 bg-gradient-to-b from-slate-600 via-slate-500 to-slate-700 h-full transform sm:-translate-x-1/2 shadow-lg shadow-slate-500/20"></div>
+          <div className="absolute left-1/2 sm:left-1/2 top-0 w-0.5 bg-gradient-to-b from-slate-600 via-slate-500 to-slate-700 h-full transform -translate-x-1/2 shadow-lg shadow-slate-500/20"></div>
 
           {educationEntries.map((entry, index) => (
             <motion.article
@@ -60,7 +60,14 @@ export default function Education() {
                 ease: "easeOut",
               }}
             >
-              {/* Timeline dot */}
+              {/* Mobile Timeline dot */}
+              <div className="block sm:hidden absolute left-1/2 w-4 h-4 bg-gradient-to-r from-slate-600 to-slate-700 rounded-full transform -translate-x-1/2 z-20 shadow-lg shadow-slate-500/30 border-2 border-white dark:border-slate-900">
+                <div className="w-full h-full bg-white dark:bg-slate-900 rounded-full flex items-center justify-center">
+                  <GraduationCap className="w-2 h-2 text-slate-600" />
+                </div>
+              </div>
+
+              {/* Desktop Timeline dot */}
               <div className="hidden sm:block absolute left-1/2 w-6 h-6 bg-gradient-to-r from-slate-600 to-slate-700 rounded-full transform -translate-x-1/2 z-20 shadow-lg shadow-slate-500/30 border-4 border-white dark:border-slate-900">
                 <div className="w-full h-full bg-white dark:bg-slate-900 rounded-full flex items-center justify-center">
                   <GraduationCap className="w-3 h-3 text-slate-600" />
@@ -68,7 +75,7 @@ export default function Education() {
               </div>
 
               <motion.div
-                className={`w-full sm:w-5/12 ml-12 sm:ml-0 ${
+                className={`w-full sm:w-5/12 px-8 sm:px-0 sm:ml-0 ${
                   index % 2 === 0 ? "sm:pr-8" : "sm:pl-8"
                 }`}
                 whileHover={{ scale: 1.02 }}
