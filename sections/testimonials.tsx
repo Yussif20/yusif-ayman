@@ -42,7 +42,7 @@ export default function Testimonials() {
 
   return (
     <section
-      className="py-4relative min-h-[500px] sm:min-h-[500px]  overflow-hidden"
+      className="py-4relative min-h-[500px]  overflow-hidden"
       id="testimonials"
     >
       <div className="text-center flex flex-col items-center justify-center gap-4 max-w-2xl mx-auto px-4 relative z-10">
