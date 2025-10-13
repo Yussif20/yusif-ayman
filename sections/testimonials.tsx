@@ -41,8 +41,11 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="py-14 relative overflow-hidden" id="testimonials">
-      <div className="text-center flex flex-col gap-4 max-w-2xl mx-auto px-4 relative z-10">
+    <section
+      className="py-4relative min-h-[500px] sm:min-h-[500px]  overflow-hidden"
+      id="testimonials"
+    >
+      <div className="text-center flex flex-col items-center justify-center gap-4 max-w-2xl mx-auto px-4 relative z-10">
         <motion.p
           className="text-slate-600 dark:text-slate-300 font-bold uppercase tracking-wider text-sm"
           initial={{ opacity: 0, y: 20 }}

@@ -33,7 +33,7 @@ export default function Projects({ locale }: ProjectsProps) {
 
   return (
     <section
-      className="container mx-auto px-4 py-16 md:py-24"
+      className="container mx-auto px-4"
       aria-labelledby="projects-heading"
     >
       <div className="text-center mb-12">
