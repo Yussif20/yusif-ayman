@@ -215,6 +215,47 @@
       ]
     }
   },
+  "Blog": {
+    "title": "Latest Articles",
+    "subtitle": "Thoughts, tutorials, and insights about web development",
+    "description": "Explore articles about frontend development, programming concepts, and industry insights",
+    "readMore": "Read More",
+    "readTime": "{minutes} min read",
+    "publishedOn": "Published on {date}",
+    "byAuthor": "By {author}",
+    "backToBlog": "← Back to Blog",
+    "shareArticle": "Share Article",
+    "relatedPosts": "Related Posts",
+    "noPostsFound": "No posts found",
+    "searchPlaceholder": "Search articles...",
+    "filterByTag": "Filter by tag",
+    "allTags": "All Tags"
+  },
+  "BlogPosts": {
+    "binaryDecimalConversion": {
+      "title": "Understanding Binary and Decimal Conversion in Programming",
+      "description": "Learn how computers use binary systems to store and process data, and why understanding binary is crucial for backend and frontend developers.",
+      "content": {
+        "intro": "When you start learning the core concepts of backend development with Node.js, you'll quickly come across one of the building blocks of computer science: the binary system. Computers use binary, made up of 0 and 1, to store and process data at the lowest level. Each binary digit (bit) represents an electrical state—either on or off.",
+        "whyBinaryMatters": {
+          "title": "Why Binary Matters",
+          "text": "Every number we use in programming gets stored and manipulated in binary. For example, if we have the decimal number 1520, converting it to binary is essential for memory handling and low-level operations. To do this, you repeatedly divide the number by 2 and record the remainders, building the binary representation from least significant bit to most significant."
+        },
+        "binaryInRam": {
+          "title": "Binary in RAM",
+          "text": "All data in RAM is ultimately stored as binary patterns. When you declare a variable in Node.js (like var x = 5;), that value exists as a certain combination of 0s and 1s in memory."
+        },
+        "encodingTextColors": {
+          "title": "Encoding Text and Colors",
+          "text": "Besides numbers, computers encode characters using standards like ASCII and Unicode (UTF-8, UTF-16, UTF-32). Each character gets a unique binary code. Colors on screens use binary as well, represented in RGB or Hex formats like (0,0,255) or #0000FF."
+        },
+        "practicalExample": {
+          "title": "Practical Example: Image Storage",
+          "text": "Images consist of thousands of pixels, with each pixel color stored as binary data. This is why understanding binary and encoding is vital not just for backend devs, but for front-end developers too—especially those working with canvas, graphics, or data visualization."
+        }
+      }
+    }
+  },
   "Contact": {
     "title": "Get In Touch",
     "subtitle": "Let's Build Something Amazing Together",
