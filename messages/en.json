@@ -97,7 +97,7 @@
       },
       {
         "opinion": "Youssef built our website showcasing software development, project management, hosting, and AI solutions. He grasped our vision quickly and delivered a clean, professional, responsive site. He was proactive, communicative, and met all deadlines with excellent work. Highly recommend!",
-        "name": "Eng. Omar Ahm",
+        "name": "Eng. Omar Ahmed",
         "role": "Technical Project Manager at We Pioners",
         "avatar": "/testimonials/avatar2.jpg"
       },
@@ -135,82 +135,91 @@
   },
   "Skills": {
     "title": "Skills & Technologies",
+    "subtitle": "Technologies and tools I work with",
     "frontend": {
       "title": "Frontend Development",
       "skills": [
         {
           "name": "React.js",
-          "level": "Expert"
+          "icon": "react"
         },
         {
           "name": "Next.js",
-          "level": "Advanced"
+          "icon": "next"
         },
         {
           "name": "TypeScript",
-          "level": "Advanced"
+          "icon": "typescript"
         },
         {
           "name": "Tailwind CSS",
-          "level": "Expert"
+          "icon": "tailwind"
         },
         {
-          "name": "JavaScript (ES6+)",
-          "level": "Expert"
+          "name": "JavaScript",
+          "icon": "javascript"
         },
         {
-          "name": "HTML5 & CSS3",
-          "level": "Expert"
+          "name": "HTML & CSS",
+          "icon": "html&css"
         }
       ]
     },
-    "apis": {
-      "title": "API Integration & Tools",
+    "backend": {
+      "title": "Backend & Tools",
       "skills": [
         {
-          "name": "React Query",
-          "level": "Advanced"
-        },
-        {
-          "name": "Axios",
-          "level": "Proficient"
+          "name": "Node.js",
+          "icon": "nodejs"
         },
         {
           "name": "REST APIs",
-          "level": "Advanced"
+          "icon": "api"
         },
         {
           "name": "GraphQL",
-          "level": "Intermediate"
+          "icon": "graphql"
         },
         {
-          "name": "API State Management",
-          "level": "Proficient"
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Firebase",
+          "icon": "firebase"
         }
       ]
     },
-    "workflow": {
-      "title": "Development Workflow",
+    "tools": {
+      "title": "Development Tools",
       "skills": [
         {
           "name": "Git & GitHub",
-          "level": "Advanced"
+          "icon": "git"
         },
         {
-          "name": "AI-Assisted Development",
-          "level": "Proficient"
+          "name": "VS Code",
+          "icon": "vscode"
         },
         {
-          "name": "Problem Solving",
-          "level": "Expert"
+          "name": "Figma",
+          "icon": "figma"
         },
         {
-          "name": "Code Optimization",
-          "level": "Advanced"
+          "name": "Docker",
+          "icon": "docker"
         },
         {
-          "name": "Responsive Design",
-          "level": "Expert"
+          "name": "Vercel",
+          "icon": "vercel"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
         }
       ]
     }

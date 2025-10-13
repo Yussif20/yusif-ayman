@@ -135,82 +135,91 @@
   },
   "Skills": {
     "title": "المهارات والتقنيات",
+    "subtitle": "التقنيات والأدوات التي أعمل بها",
     "frontend": {
       "title": "تطوير الواجهات الأمامية",
       "skills": [
         {
           "name": "React.js",
-          "level": "خبير"
+          "icon": "react"
         },
         {
           "name": "Next.js",
-          "level": "متقدم"
+          "icon": "nextjs"
         },
         {
           "name": "TypeScript",
-          "level": "متقدم"
+          "icon": "typescript"
         },
         {
           "name": "Tailwind CSS",
-          "level": "خبير"
+          "icon": "tailwindcss"
         },
         {
-          "name": "JavaScript (ES6+)",
-          "level": "خبير"
+          "name": "JavaScript",
+          "icon": "javascript"
         },
         {
-          "name": "HTML5 & CSS3",
-          "level": "خبير"
+          "name": "HTML & CSS",
+          "icon": "html5"
         }
       ]
     },
-    "apis": {
-      "title": "تكامل APIs والأدوات",
+    "backend": {
+      "title": "الخادم والأدوات",
       "skills": [
         {
-          "name": "React Query",
-          "level": "متقدم"
-        },
-        {
-          "name": "Axios",
-          "level": "ماهر"
+          "name": "Node.js",
+          "icon": "nodejs"
         },
         {
           "name": "REST APIs",
-          "level": "متقدم"
+          "icon": "api"
         },
         {
           "name": "GraphQL",
-          "level": "متوسط"
+          "icon": "graphql"
         },
         {
-          "name": "إدارة حالة API",
-          "level": "ماهر"
+          "name": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "Firebase",
+          "icon": "firebase"
         }
       ]
     },
-    "workflow": {
-      "title": "سير العمل التطويري",
+    "tools": {
+      "title": "أدوات التطوير",
       "skills": [
         {
           "name": "Git & GitHub",
-          "level": "متقدم"
+          "icon": "git"
         },
         {
-          "name": "التطوير بمساعدة الذكاء الاصطناعي",
-          "level": "ماهر"
+          "name": "VS Code",
+          "icon": "vscode"
         },
         {
-          "name": "حل المشكلات",
-          "level": "خبير"
+          "name": "Figma",
+          "icon": "figma"
         },
         {
-          "name": "تحسين الكود",
-          "level": "متقدم"
+          "name": "Docker",
+          "icon": "docker"
         },
         {
-          "name": "التصميم المتجاوب",
-          "level": "خبير"
+          "name": "Vercel",
+          "icon": "vercel"
+        },
+        {
+          "name": "AWS",
+          "icon": "aws"
         }
       ]
     }
