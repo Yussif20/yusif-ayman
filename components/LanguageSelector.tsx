@@ -1,15 +1,22 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function LanguageSelector() {
   const t = useTranslations("LanguageSelector");
   const locale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    router.push(`/${e.target.value}`);
+    const newLocale = e.target.value;
+
+    // Remove the current locale from the pathname to get the base path
+    const pathWithoutLocale = pathname.replace(`/${locale}`, "") || "/";
+
+    // Navigate to the same path with the new locale
+    router.push(`/${newLocale}${pathWithoutLocale}`);
   };
 
   return (
